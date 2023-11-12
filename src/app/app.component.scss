@@ -1,0 +1,18 @@
+.page-container {
+  display: flex;
+}
+
+
+.sidebar {
+  flex: 0 0 auto;
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 100%;
+}
+
+
+.router-outlet {
+  flex-grow: 1;
+  padding: 20px;
+}

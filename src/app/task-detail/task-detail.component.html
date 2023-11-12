@@ -1,0 +1,5 @@
+<div class="task-detail" *ngIf="task">
+  <h2>{{ task.title || 'Заголовок отсутствует' }}</h2>
+  <p>{{ task.text || 'Текст отсутствует' }}</p>
+  <button (click)="editTask(task.id)">Редактировать</button>
+</div>

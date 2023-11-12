@@ -1,0 +1,11 @@
+<div class="task-list-container">
+  <h2>Список задач</h2>
+  <ul class="task-list">
+    <li *ngFor="let task of tasks">
+      <h3 [routerLink]="['/task-detail', task.id]">{{ task.title }}</h3>
+      <p>{{ task.text.length > 100 ? task.text.slice(0, 100) + '...' : task.text }}</p>
+
+      <button (click)="editTask(task.id)">Редактировать</button>
+    </li>
+  </ul>
+</div>

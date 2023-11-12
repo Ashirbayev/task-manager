@@ -1,0 +1,10 @@
+<div class="add-task-form">
+  <h2>Добавить/Редактировать задачу</h2>
+  <label for="title">Заголовок:</label>
+  <input type="text" id="title" [(ngModel)]="newTaskTitle" required>
+
+  <label for="text">Текст:</label>
+  <textarea id="text" [(ngModel)]="newTaskText" required></textarea>
+
+  <button (click)="addTask()">Сохранить</button>
+</div>
