@@ -24,4 +24,10 @@ export class TaskViewComponent implements OnInit {
   editTask(taskId: number): void {
     this.router.navigate(['/add-task', { id: taskId, edit: true }]);
   }
+
+  deleteTask(taskId: number) {
+    this.taskService.deleteTask(taskId);
+  }
+
+
 }

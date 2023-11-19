@@ -2,4 +2,5 @@
   <h2>{{ task.title || 'Заголовок отсутствует' }}</h2>
   <p>{{ task.text || 'Текст отсутствует' }}</p>
   <button (click)="editTask(task.id)">Редактировать</button>
+  <button (click)="deleteTask(task.id)">Удалить</button>
 </div>

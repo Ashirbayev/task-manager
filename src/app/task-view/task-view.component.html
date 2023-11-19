@@ -6,6 +6,7 @@
       <p>{{ task.text.length > 100 ? task.text.slice(0, 100) + '...' : task.text }}</p>
 
       <button (click)="editTask(task.id)">Редактировать</button>
+      <button (click)="deleteTask(task.id)">Удалить</button>
     </li>
   </ul>
 </div>
